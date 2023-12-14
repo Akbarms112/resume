@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akbar portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2340e1e3dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/web-dev-tasl/asserts/logo.jpg" class="logo" height="120px" width="140px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Engineering Student</p>
+                <h1>Hi,I'm <span>Akbar</span> <br>From India</h1>
+            </div>
+        </div>``
+    </div>
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/web-dev-tasl/asserts/ya-removebg-preview.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>Hi!.I'm Akbar<br>
+                    I am currently pursuing my second year bachelor of Technology in Information Technology.I had more Interstered in coding and computer stuffs so i took maths computer in higher studies
+                    Besides campus studies,I also Interstered in the Web Development,this made me as a web Developer. iam hardworking and determined person.This leads me to lrarn more about computer stuffs.Now in 
+                addition to i am learning Node js,Mango dp to become a backend Developer.That's my bio...</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web designing and hosting</span><br>web App designing</li>
+                            <li><span>Problem Solving</span><br>Solving problem in java</li>
+                            <li><span>Photo and Video Editing</span><br>Editing photos and video in VN,Photoshot etc..
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>2022</span><br><a href="https://akbarms112.github.io/web-dev-tasks/web/">Click to
+                                    view</a><br>Developed Whatsapp clone website</li>
+                            <li><span>2023</span><br><a
+                                    href="(https://akbarms112.github.io/chitfund/dynamic%20wesite/indexpage.html)">Click
+                                    to view</a><br>Developed (CHITFUND WEB APP)LocalHost website by using Html,css,php,javascript,bootstarp,mysql </li>
+                            <li><span>2023</span><br>Developed my personal web page resume</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2019</span><br>SSLC from Vhs Dharmapuri with 79%</li>
+                            <li><span>2020-2021</span><br>HSC from Vhs Dharmapuri with 88.88%</li>
+                            <li><span>2021-2025</span><br>B.Tech(IT) from RPSIT Salem with 7.9% CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------services--------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>And i m a passinating web designer.And im currently working(learning) Backend Development <br>
+
+                         </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-i-cursor"></i>
+                    <h2>Photo and Video Editing</h2>
+                    <p>And also i m good in photo and video Editing.i worked photo shop in 2 years and i learn lot of knowlege about photo and video Editing</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Skills</h1>
+            <div class="work-list">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>My SQL</li>
+                    <li>GITHUB</li>
+
+                </ul>
+            </div>
+        </div>
+    </div> -->
+   
+<h1 style="text-align: center; font-size: 20px;">HTML</h1>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="55" class="slider" id="myuange">
+  <p>Value: <span id="demo4"></span></p>
+</div>
+
+<script>
+    var slider = document.getElementById("myuange");
+    var output = document.getElementById("demo4");
+    output.innerHTML = slider.value;
+    
+      slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+    </script>
+
+<h1 style="text-align: center; font-size: 20px;">GITHUB</h1>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="mydange">
+  <p>Value: <span id="demo5"></span></p>
+</div>
+
+<script>
+    var slider = document.getElementById("mydange");
+    var output = document.getElementById("demo5");
+    output.innerHTML = slider.value;
+    
+      slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+    </script>
+
+
+<h1 style="text-align: center; font-size: 20px;">MY SQL</h1>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="60" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div>
+
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+    </script>
+
+
+<h1 style="text-align: center; font-size: 20px;">CSS</h1>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myeange">
+  <p>Value: <span id="demo1"></span></p>
+</div>
+<script>
+    var slider = document.getElementById("myeange");
+    var output = document.getElementById("demo1");
+    output.innerHTML = slider.value;
+    
+      slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+    </script>
+
+
+
+    
+<h1 style="text-align: center; font-size: 20px;">JavaScript</h1>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="40" class="slider" id="myrange">
+  <p>Value: <span id="demo2"></span></p>
+</div>
+<script>
+var slider = document.getElementById("myrange");
+var output = document.getElementById("demo2");
+output.innerHTML = slider.value;
+
+  slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+
+
+
+
+    
+<h1 style="text-align: center; font-size: 20px;">PHP</h1>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="mymange">
+  <p>Value: <span id="demo3"></span></p>
+</div>
+
+<script>
+    var slider = document.getElementById("mymange");
+    var output = document.getElementById("demo3");
+    output.innerHTML = slider.value;
+    
+      slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+    </script>
+
+
+
+    
+
+
+
+
+
+    <!---------------portfolio---------->
+    <!---<div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="web-dev-tasl/asserts/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>The app connects you to the talented people around the world download it from play store </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="web-dev-tasl/asserts/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world download it from play store </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="web-dev-tasl/asserts/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App </h3>
+                        <p>The app connects you to the talented people around the world download it from play store </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>-->
+    <!-----------contact----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8903265089</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/web-dev-tasl/asserts/AKBAR ALI.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &#169; Akbar. Made with <i class="fa-solid fa-heart"></i> by personal webresume</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemeu =document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxCZYwu3o3KKhZm-pqU5ViF2GAiEgm9gdZzj2eewdXyq8sflgvMYlrIMDh19Pm-0g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+
+</html>
